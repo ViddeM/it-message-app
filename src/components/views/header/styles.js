@@ -12,6 +12,7 @@ export const HeaderCard = styled.div`
     vertical-align: middle;
     background-color: #30B0FF;
     margin-bottom: 20px;
+    border-bottom: 5px solid rgba(0,0,0,0.4);
 `
 
 export const HeaderText = styled.h1`

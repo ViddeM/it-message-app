@@ -24,10 +24,13 @@ export const BodyCard = styled.div`
 
 export const BodyTitleText = styled.h3`
     text-align: center;
+    margin-top: 5px;
 `
 
-export const BodyText = styled.p`
-
+export const BodyText = styled.h3`
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 15px;
 `
 
 export const BodyInput = styled.textarea`
@@ -35,30 +38,43 @@ export const BodyInput = styled.textarea`
     background-color: white;
     margin: 3px;
     position: relative;
-    width: 97%;
-    height: 98%;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     border: none;
     overflow: auto;
+    flex-grow: 1;
     
     &:focus {
-        outline:0;
+        outline: 0;
     }
 `
 
 export const BodyInputOverlay = styled.div`
-    height:600px;
+    height: 380px;
     border: 5px solid rgba(0,0,0,0.4);
     border-radius: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: white;
+    display: flex;
 `
 
 export const CharacterCountText = styled.h3`
     text-align: right;
     margin-bottom: 10px;
+    margin-right: 10px;
+`
+
+export const BodyRecieverInput = styled.input`
+    border: 5px solid rgba(0,0,0,0.4);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    &:focus {
+        outline: 0;
+    }
 `
