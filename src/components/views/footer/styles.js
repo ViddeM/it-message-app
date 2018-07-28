@@ -6,4 +6,5 @@ export const FooterContainer = styled.div`
 `
 
 export const FooterText = styled.h3`
+    margin-bottom: 10px
 `
