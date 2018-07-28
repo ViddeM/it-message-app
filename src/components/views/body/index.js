@@ -4,17 +4,17 @@ import { PrimaryButton, DangerButton } from '../../elements/Buttons/styles.js';
 import { VBox } from '../../elements/VBox/styles.js';
 import { HBox } from '../../elements/HBox/styles.js'; 
 
-export const Body = (props) =>
+export const Body = ({onInputChange, totalCount, count}) =>
     <BodyContainer>
         <BodyCard>
             <VBox>
                 <BodyTitleText>Message</BodyTitleText>
                 
                 <BodyInputOverlay style={{marginBottom: "0"}}>
-                    <BodyInput placeholder="Write your message here, but beware the character count!" onKeyUp={props.onInputChange} onChange={props.onInputChange} maxLength={props.totalCount.toString()}/>
+                    <BodyInput placeholder="Write your message here, but beware the character count!" onKeyUp={onInputChange} onChange={onInputChange} maxLength={totalCount.toString()}/>
                 </BodyInputOverlay>
                 
-                <CharacterCountText style={{marginTop: "0"}}>Character count: {props.count}/{props.totalCount}</CharacterCountText>
+                <CharacterCountText style={{marginTop: "0"}}>Character count: {count}/{totalCount}</CharacterCountText>
                 
                 <HBox> 
                     <BodyTitleText style={{marginLeft: "10px"}}>Reciever:</BodyTitleText>
