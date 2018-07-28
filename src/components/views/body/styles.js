@@ -17,7 +17,6 @@ export const BodyCard = styled.div`
     padding: 10px;
     margin: 10px;
  
-    -webkit-box-shadow: 2px 2px 10px 2px rgba(158,158,158,0.7);
     -moz-box-shadow: 2px 2px 10px 2px rgba(158,158,158,0.7);
     box-shadow: 2px 2px 10px 2px rgba(158,158,158,0.7);
 `

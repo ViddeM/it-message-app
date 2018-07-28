@@ -18,8 +18,7 @@ export const HeaderCard = styled.div`
 export const HeaderText = styled.h1`
     color: white;    
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    -webkit-background-clip: text;
-       -moz-background-clip: text;
-            background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     flex;
 `
